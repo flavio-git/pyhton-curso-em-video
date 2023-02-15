@@ -1,3 +1,8 @@
+"""
+Aprimore o desafio 093 para que ele funcione com vários jogadores,
+incluindo um sistema de visualização de detalhes do aproveitamento
+de cada jogador.
+"""
 
 jogadores_list = list()
 
@@ -7,8 +12,8 @@ while True:
 
     jogador['nome'] = input('Nome do Jogador: ').capitalize()
 
-    quantidade_partidas = int(input(f'Quantas partidas {jogador["nome"]} jogou? '))
-    for i in range(0, quantidade_partidas):
+    numero_partidas = int(input(f'Quantas partidas {jogador["nome"]} jogou? '))
+    for i in range(0, numero_partidas):
         quantidade_gols = int(input(f'   Quantos gols na partida {i + 1}? '))
         gols_por_partida.append(quantidade_gols)
 
